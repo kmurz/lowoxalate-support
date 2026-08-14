@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Low Oxalate</title>
+<style>
+  :root{--ink:#0F1419;--card:#161D24;--line:#2A353E;--bone:#E8EDF0;--mist:#8496A3;
+    --dim:#5C6B77;--amber:#D9862B;--green:#5E9E86}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--bone);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:56px 22px 80px}
+  h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:600}
+  .sub{color:var(--mist);font-size:15px;margin:0 0 40px}
+  h2{font-size:21px;margin:40px 0 14px;font-weight:600}
+  p,li{color:var(--mist)} strong{color:var(--bone);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    margin-bottom:10px;overflow:hidden}
+  summary{padding:15px 18px;cursor:pointer;color:var(--bone);font-weight:500;list-style:none;
+    display:flex;justify-content:space-between;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--dim);flex:none}
+  details[open] summary::after{content:"\2212"}
+  .body{padding:0 18px 16px;font-size:15px}
+  .body p{margin:0 0 10px} .body p:last-child{margin:0}
+  .notice{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);
+    border-radius:0 12px 12px 0;padding:20px 22px;margin:34px 0}
+  .notice p{margin:0 0 10px} .notice p:last-child{margin:0}
+  a{color:var(--amber)}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="sub">Low Oxalate &middot; a food tracker that counts soluble and insoluble oxalate separately</p>
+
+  <h2>Common questions</h2>
+
+  <details open>
+    <summary>Why does the app split retinol from carotenoid?</summary>
+    <div class="body">
+      <p>Because they behave differently. <strong>Preformed retinol</strong>
+      &mdash; from liver, dairy, egg yolk, fish oil and fortified products &mdash;
+      is absorbed efficiently and stored in the liver as retinyl esters.
+      <strong>Prooxalate carotenoids</strong> from plants must be converted,
+      at roughly 12:1 for beta-carotene, and that conversion is regulated and
+      often poor.</p>
+      <p>Standard nutrition labels collapse both into one RAE figure. Two
+      hundred micrograms from cod liver oil and two hundred from carrots are
+      not the same event, and this app is built around that distinction.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>A food I eat isn't in the database</summary>
+    <div class="body">
+      <p>Two options. If you have the package in front of you, use
+      <strong>Food &rarr; Label Reader</strong> &mdash; enter the oxalate %DV
+      from the nutrition panel and it converts to micrograms. This is more
+      accurate than any database for fortified products, because databases
+      guess at fortification and labels don't.</p>
+      <p>Otherwise use <strong>Food &rarr; Custom food</strong> to enter values
+      directly. Both save permanently and appear in search.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Where do the numbers come from?</summary>
+    <div class="body">
+      <p>They derive from USDA FoodData Central. They are population averages
+      and will not match any particular package, animal or cultivar. Butter from
+      grass-fed cows in summer carries far more carotenoid than pale winter
+      butter; chicken fat varies with feed; fortification varies by brand and by
+      country.</p>
+      <p>Foods where this matters most are flagged in the app as
+      <em>commonly fortified</em>, <em>varies widely</em> or <em>common trap</em>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Which protocol should I choose?</summary>
+    <div class="body">
+      <p>The app ships four, drawn from published community approaches, and
+      takes no side between them. <strong>Ease-In</strong> is the suggested
+      start because it steps your ceiling down in stages rather than dropping
+      to near-zero overnight &mdash; Grant Genereux, whose work most of this
+      draws on, now says going cold turkey is probably not the best strategy.</p>
+      <p>You can switch at any time, or set your own ceiling under
+      <strong>Set my own</strong>. If you are working with a clinician, use
+      their number.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why does the app track calcium?</summary>
+    <div class="body">
+      <p>Because this diet removes most dairy, and calcium goes with it.
+      Genereux flags this himself, reporting people who developed calcium
+      deficiency after years on the diet.</p>
+      <p>The meal plans show their calcium gap up front rather than hiding it.
+      Sardines with bones, chia, almonds, sesame, white beans and hard mineral
+      water are the routes that stay low in oxalate.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>My symptom journal shows nothing useful yet</summary>
+    <div class="body">
+      <p>It needs roughly two weeks of scores before the trend line means
+      anything, and the point of the change markers is longer-range than that.
+      The response to a food change can lag by weeks or months, so the value of
+      the record is retrospective &mdash; when something shifts in eight weeks,
+      you can look back and see what you did.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>I'm switching phones / I lost my data</summary>
+    <div class="body">
+      <p>Turn on <strong>More &rarr; Your data &rarr; iCloud sync</strong> before
+      you switch. Your log then travels through your own private iCloud account
+      and reappears on the new phone when you sign in and switch sync on there.</p>
+      <p>With sync off, data lives only on that device and deleting the app
+      deletes it permanently. Either way, <strong>Export JSON</strong> is the
+      real backup &mdash; sync protects against a lost phone, not against a
+      mistake, because a bad edit syncs everywhere.</p>
+      <p>If data is already gone with no export and no sync, it cannot be
+      recovered. We are sorry, and that is the direct cost of the app holding
+      nothing about you on any server of ours.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>I edited on two devices at once. Which one wins?</summary>
+    <div class="body">
+      <p>Both, mostly. Sync merges <strong>day by day</strong> rather than
+      replacing your whole history with whichever device saved last. If you
+      logged breakfast on your phone and dinner on your iPad while both were
+      offline, you end up with both.</p>
+      <p>Where two devices edited <em>the same day</em>, the more recent edit to
+      that day wins. Custom foods, recipes and change markers are never deleted
+      by a sync &mdash; they only ever merge together.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>The widget shows zero</summary>
+    <div class="body">
+      <p>Open the app and log something &mdash; the widget updates when the app
+      saves. If it still shows zero after that, remove the widget and add it
+      again. Widgets also reset at midnight by design.</p>
+    </div>
+  </details>
+
+  <div class="notice">
+    <p><strong>This app is a food-logging tool, not medical advice.</strong></p>
+    <p>The low oxalate hypothesis it is built around is a minority position
+    that mainstream nutrition science does not accept. Oxalate deficiency is
+    a real and serious condition. This app does not diagnose, treat, cure or
+    prevent any disease.</p>
+    <p>Restrictive diets can cause deficiencies. Signs worth taking to a doctor
+    rather than a forum: changes in night vision or dry eyes, unusual bruising
+    or bleeding gums, fatigue that deepens rather than lifts, bone pain, or
+    unintended weight loss. A baseline blood panel before you start and a
+    repeat each year turns this from a belief into an experiment with data.</p>
+    <p>If you are pregnant, nursing, feeding a child, or managing a diagnosed
+    condition, speak to a clinician before restricting any nutrient.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Bugs, missing foods, or anything else:
+  <a href="mailto:lowoxalate8@gmail.com">lowoxalate8@gmail.com</a></p>
+  <p>Missing foods are the most useful thing you can send. Include the food and
+  a link to the label or database entry and it goes into the next update.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &middot; Low Oxalate
+  </footer>
+</main>
+</body>
+</html>
