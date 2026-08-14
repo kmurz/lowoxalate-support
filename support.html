@@ -41,134 +41,59 @@
   <h2>Common questions</h2>
 
   <details open>
-    <summary>Why does the app split retinol from carotenoid?</summary>
+    <summary>Why does the app split soluble from insoluble oxalate?</summary>
     <div class="body">
-      <p>Because they behave differently. <strong>Preformed retinol</strong>
-      &mdash; from liver, dairy, egg yolk, fish oil and fortified products &mdash;
-      is absorbed efficiently and stored in the liver as retinyl esters.
-      <strong>Prooxalate carotenoids</strong> from plants must be converted,
-      at roughly 12:1 for beta-carotene, and that conversion is regulated and
-      often poor.</p>
-      <p>Standard nutrition labels collapse both into one RAE figure. Two
-      hundred micrograms from cod liver oil and two hundred from carrots are
-      not the same event, and this app is built around that distinction.</p>
+<p>Because only one of them matters much. <strong>Soluble oxalate</strong> is the fraction that crosses the gut wall and ends up in your urine, where stones form. <strong>Insoluble oxalate</strong> is largely bound already and passes through.</p>
+     <p>Most published charts give a single total, which is why two foods with the same number can behave differently. This app splits them on every entry.</p>
     </div>
   </details>
 
   <details>
-    <summary>A food I eat isn't in the database</summary>
+    <summary>Why does cooking method change the number?</summary>
     <div class="body">
-      <p>Two options. If you have the package in front of you, use
-      <strong>Food &rarr; Label Reader</strong> &mdash; enter the oxalate %DV
-      from the nutrition panel and it converts to micrograms. This is more
-      accurate than any database for fortified products, because databases
-      guess at fortification and labels don't.</p>
-      <p>Otherwise use <strong>Food &rarr; Custom food</strong> to enter values
-      directly. Both save permanently and appear in search.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>Where do the numbers come from?</summary>
-    <div class="body">
-      <p>They derive from USDA FoodData Central. They are population averages
-      and will not match any particular package, animal or cultivar. Butter from
-      grass-fed cows in summer carries far more carotenoid than pale winter
-      butter; chicken fat varies with feed; fortification varies by brand and by
-      country.</p>
-      <p>Foods where this matters most are flagged in the app as
-      <em>commonly fortified</em>, <em>varies widely</em> or <em>common trap</em>.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>Which protocol should I choose?</summary>
-    <div class="body">
-      <p>The app ships four, drawn from published community approaches, and
-      takes no side between them. <strong>Ease-In</strong> is the suggested
-      start because it steps your ceiling down in stages rather than dropping
-      to near-zero overnight &mdash; Grant Genereux, whose work most of this
-      draws on, now says going cold turkey is probably not the best strategy.</p>
-      <p>You can switch at any time, or set your own ceiling under
-      <strong>Set my own</strong>. If you are working with a clinician, use
-      their number.</p>
+<p>Oxalate is one of the few dietary compounds you can substantially cook away. <strong>Boiling removes roughly 30&ndash;87% of soluble oxalate</strong> if you discard the water. Steaming removes less. Baking and roasting remove none at all.</p>
+     <p>That is why a baked potato with skin sits on the high-oxalate lists while peeled boiled potato is manageable. Every entry carries a preparation method, and the number changes accordingly.</p>
     </div>
   </details>
 
   <details>
     <summary>Why does the app track calcium?</summary>
     <div class="body">
-      <p>Because this diet removes most dairy, and calcium goes with it.
-      Genereux flags this himself, reporting people who developed calcium
-      deficiency after years on the diet.</p>
-      <p>The meal plans show their calcium gap up front rather than hiding it.
-      Sardines with bones, chia, almonds, sesame, white beans and hard mineral
-      water are the routes that stay low in oxalate.</p>
+<p>Because calcium is the mechanism, not a side note. Calcium binds oxalate in your gut so it leaves in stool instead of being absorbed into your urine.</p>
+     <p>Cutting calcium alongside oxalate backfires: in controlled feeding, dropping calcium from 1,002&nbsp;mg to 391&nbsp;mg a day <strong>raised urinary oxalate by 28%</strong>. So hit your calcium, and hit it <strong>at the same meal</strong> as the oxalate. This app checks that pairing meal by meal, not just as a daily total.</p>
     </div>
   </details>
 
   <details>
-    <summary>My symptom journal shows nothing useful yet</summary>
+    <summary>A food I eat isn't in the database</summary>
     <div class="body">
-      <p>It needs roughly two weeks of scores before the trend line means
-      anything, and the point of the change markers is longer-range than that.
-      The response to a food change can lag by weeks or months, so the value of
-      the record is retrospective &mdash; when something shifts in eight weeks,
-      you can look back and see what you did.</p>
+<p>Use <strong>Food &rarr; Custom food</strong> to add it with your own values. It saves permanently and appears in search.</p>
+     <p>Searches that come back empty are also recorded locally under <strong>More &rarr; Your data</strong>, and you can send the list in one tap. That is the fastest way to get foods added.</p>
     </div>
   </details>
 
   <details>
-    <summary>I'm switching phones / I lost my data</summary>
+    <summary>Where do the numbers come from?</summary>
     <div class="body">
-      <p>Turn on <strong>More &rarr; Your data &rarr; iCloud sync</strong> before
-      you switch. Your log then travels through your own private iCloud account
-      and reappears on the new phone when you sign in and switch sync on there.</p>
-      <p>With sync off, data lives only on that device and deleting the app
-      deletes it permanently. Either way, <strong>Export JSON</strong> is the
-      real backup &mdash; sync protects against a lost phone, not against a
-      mistake, because a bad edit syncs everywhere.</p>
-      <p>If data is already gone with no export and no sync, it cannot be
-      recovered. We are sorry, and that is the direct cost of the app holding
-      nothing about you on any server of ours.</p>
+<p>They derive from the Harvard oxalate analysis used by US kidney-stone programmes, supplemented by published soluble/insoluble fractionation studies.</p>
+     <p>Oxalate varies with cultivar, soil, season and preparation more than most nutrients. Treat every figure as a band, not a measurement.</p>
     </div>
   </details>
 
   <details>
-    <summary>I edited on two devices at once. Which one wins?</summary>
+    <summary>Which protocol should I choose?</summary>
     <div class="body">
-      <p>Both, mostly. Sync merges <strong>day by day</strong> rather than
-      replacing your whole history with whichever device saved last. If you
-      logged breakfast on your phone and dinner on your iPad while both were
-      offline, you end up with both.</p>
-      <p>Where two devices edited <em>the same day</em>, the more recent edit to
-      that day wins. Custom foods, recipes and change markers are never deleted
-      by a sync &mdash; they only ever merge together.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>The widget shows zero</summary>
-    <div class="body">
-      <p>Open the app and log something &mdash; the widget updates when the app
-      saves. If it still shows zero after that, remove the widget and add it
-      again. Widgets also reset at midnight by design.</p>
+<p><strong>Clinical 100</strong> is what most stone programmes prescribe and the sensible default. <strong>Ease-In</strong> steps down gradually if you would rather not drop all at once. <strong>Strict 50</strong> is for people still forming stones despite compliance, and <strong>Moderate 200</strong> reflects the caution against over-restricting produce.</p>
+     <p>If a urologist or dietitian has given you a number, use <strong>Set my own</strong>.</p>
     </div>
   </details>
 
   <div class="notice">
     <p><strong>This app is a food-logging tool, not medical advice.</strong></p>
-    <p>The low oxalate hypothesis it is built around is a minority position
-    that mainstream nutrition science does not accept. Oxalate deficiency is
-    a real and serious condition. This app does not diagnose, treat, cure or
-    prevent any disease.</p>
-    <p>Restrictive diets can cause deficiencies. Signs worth taking to a doctor
-    rather than a forum: changes in night vision or dry eyes, unusual bruising
-    or bleeding gums, fatigue that deepens rather than lifts, bone pain, or
-    unintended weight loss. A baseline blood panel before you start and a
-    repeat each year turns this from a belief into an experiment with data.</p>
-    <p>If you are pregnant, nursing, feeding a child, or managing a diagnosed
-    condition, speak to a clinician before restricting any nutrient.</p>
+    <p>Reducing dietary oxalate is <strong>standard clinical practice</strong> for recurrent calcium oxalate kidney stones, and most stone programmes aim for around 100&nbsp;mg a day. The broader claim &mdash; that oxalate drives inflammation, joint pain and fatigue in people without stones &mdash; is not established. This app supports both without pretending they have the same standing.</p>
+    <p>Oxalate figures vary with cultivar, soil, season and preparation. Treat them as bands, not measurements.</p>
+    <p>Restrictive diets can cause deficiencies, and cutting calcium alongside oxalate actively raises the oxalate your kidneys see. <strong>Flank pain, blood in urine, or pain on urination needs a doctor, not a food log.</strong> If you form stones, ask for a 24-hour urine collection &mdash; it tells you far more than any app can.</p>
+    <p>If you are pregnant, nursing, feeding a child, or managing kidney disease, speak to a clinician before restricting anything.</p>
   </div>
 
   <h2>Contact</h2>
